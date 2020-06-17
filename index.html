@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,109 @@
   <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <section class="demos">
     <div class="container">
       <h2 class="demos__title">Портфолио</h2>
-      <a href="./demos/pink/index.html"><img src="./img/pink.png" alt="Pink" width="300"><span class="visually-hidden">Pink</span></a>
+      <div class="demos__list">
+
+        <div class="demos__item">
+          <div class="demos__wrapper">
+            <img src="./img/sedona.png" alt="Pink" width="300">
+            <div class="demos__description">
+              <ul>
+                <li>Фиксированная верстка</li>
+                <li>PixelPerfect</li>
+                <li>JS</li>
+              </ul>
+              <button class="demos__btn" data-demos="1" type="button">Подробнее о проекте</button>
+            </div>
+          </div>
+          <a href="./demos/sedona/index.html">Посмотреть демо</a>
+        </div>
+
+        <div class="demos__item">
+          <div class="demos__wrapper">
+            <img src="./img/technomart.png" alt="Pink" width="300">
+            <div class="demos__description">
+              <ul>
+                <li>Фиксированная верстка</li>
+                <li>PixelPerfect</li>
+                <li>JS</li>
+              </ul>
+              <button class="demos__btn" data-demos="2" type="button">Подробнее о проекте</button>
+            </div>
+          </div>
+          <a href="./demos/technomart/index.html">Посмотреть демо</a>
+        </div>
+
+        <div class="demos__item">
+          <div class="demos__wrapper">
+            <img src="./img/pink.png" alt="Pink" width="300">
+            <div class="demos__description">
+              <ul>
+                <li>Адаптивная, кроссбраузерная верстка</li>
+                <li>БЭМ</li>
+                <li>PixelPerfect</li>
+                <li>JS</li>
+              </ul>
+              <button class="demos__btn" data-demos="3" type="button">Подробнее о проекте</button>
+            </div>
+          </div>
+          <a href="./demos/pink/index.html">Посмотреть демо</a>
+        </div>
+
+      </div>
     </div>
   </section>
+
+  <div class="overlay">
+
+    <div class="modal" data-modal="1">
+      <h2>Учебный проект «Седона»</h2>
+      <p>2 страницы + модальные окна</p>
+      <ul>
+        <li>Стандарты вёрстки: HTML5, CSS3, прогрессивное улучшение.</li>
+        <li>Фиксированная верстка</li>
+        <li>Кроссбраузерность: Chrome, Firefox, Safari, Edge, Internet Explorer 11.</li>
+        <li>Интерактивность vanilla JS</li>
+        <li>Блок карты: реализация — интерактивная карта</li>
+        <li>Модальные окна</li>
+      </ul>
+    </div>
+
+    <div class="modal" data-modal="2">
+      <h2>Учебный проект «Техномарт»</h2>
+      <p>2 страницы + модальные окна</p>
+      <ul>
+        <li>Стандарты вёрстки: HTML5, CSS3, прогрессивное улучшение.</li>
+        <li>Фиксированная верстка</li>
+        <li>Кроссбраузерность: Chrome, Firefox, Safari, Edge, Internet Explorer 11.</li>
+        <li>Интерактивность vanilla JS</li>
+        <li>Блок карты: реализация — интерактивная карта</li>
+        <li>Модальные окна</li>
+      </ul>
+    </div>
+
+    <div class="modal modal--pink" data-modal="3">
+      <h2>Учебный проект «Пинк»</h2>
+      <ul>
+        <li>Адаптивность сетки: мобильная, планшетная и десктопная версии (Mobile First).</li>
+        <li>Адаптивность графики: ретинизация(picture, webp), векторные изображения (SVG-sprite)</li>
+        <li>Используемая методология: БЭМ.</li>
+        <li>Используемый препроцессор: Sass/Scss</li>
+        <li>Используемый инструмент автоматизации: Gulp.</li>
+        <li>Используемые фреймворки: нет.</li>
+        <li>Кроссбраузерность: Chrome, Firefox, Safari, Edge, Internet Explorer 11.</li>
+        <li>Интерактивность vanilla JS</li>
+        <li>Блок карты: реализация — интерактивная карта</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="./js/main.js"></script>
 </body>
+
 </html>

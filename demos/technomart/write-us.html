@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Техномарт-напишите нам</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+  <form class="write-us" action="http://echo.htmlacademy.ru" method="post">
+    <div class="write-us-contacts">
+      <div class="fullname-field">
+        <label for="fullname">Ваше имя:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Имя Фамилия" required>
+      </div>
+      <div class="email-field">
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" id="email" name="email" placeholder="email@example.com" required>
+      </div>
+    </div>
+    <div class="message-field">
+      <label for="message">Текст письма:</label>
+      <textarea name="messge" id="message" rows="6" placeholder="В свободной форме"></textarea>
+    </div>
+    <div class="btn-container">
+      <button class="btn" type="submit">Отправить</button>
+    </div>
+    
+  </form>
+</div>
+</body>
+</html>
